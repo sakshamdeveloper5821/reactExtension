@@ -1,0 +1,35 @@
+.store {
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+
+.store:hover {
+    background: #f5f5f5;
+}
+
+.store-image {
+    min-width: 100px;
+}
+
+.store-image img {
+    width: 100px;
+}
+
+.store-description {
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.store-description h3 {
+    color: var(--theme-primary-color-2);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.store-description p {
+    font-size: 14px;
+    margin-top: 0;
+}

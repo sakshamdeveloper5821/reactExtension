@@ -1,0 +1,48 @@
+.setting {
+    display: flex;
+}
+
+.setting-description {
+    text-align: left;
+    width: 412px;
+}
+
+.setting-toggler {
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting-toggler input[type=checkbox].toggle-switch {
+    -webkit-appearance: none;
+
+    width: 6em;
+    height: 3em;
+    border-radius: 3em;
+    background-color: #ccc;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color 0.09s ease-in-out;
+    position: relative;
+}
+
+.setting-toggler input[type=checkbox].toggle-switch:checked {
+    background-color: var(--theme-primary-color-1);
+}
+
+.setting-toggler input[type=checkbox].toggle-switch::after {
+    content: '';
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+    background: var(--theme-secondary-color-1);
+    position: absolute;
+    left: 0;
+    transform: scale(.8);
+    transition: left  .09s ease-in-out;
+}
+
+.setting-toggler input[type=checkbox].toggle-switch:checked::after {
+    left: 3em;
+}

@@ -1,0 +1,77 @@
+nav {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+nav div.nav-item {
+    width: calc(100% / 3 - 2em);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 1em;
+    cursor: pointer;
+    border-top: 2px solid transparent;
+}
+
+nav div.nav-item.selected {
+    border-top: 2px solid var(--theme-primary-color-1);
+    cursor: default;
+}
+
+nav div.nav-item.selected p {
+    color: var(--theme-primary-color-1);
+}
+
+nav div.nav-item > div.nav-icon {
+    height: 30px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+nav div.nav-item > div.nav-icon.todays-deal > svg {
+   fill: #e4e4e4;
+   enable-background:new 0 0 488.152 488.152;
+}
+
+nav div.nav-item.selected > div.nav-icon.todays-deal > svg {
+    fill: var(--theme-primary-color-1);
+    enable-background:new 0 0 488.152 488.152;
+}
+
+nav div.nav-item > div.nav-icon.similar-stores {
+    fill: #e4e4e4;
+}
+
+nav div.nav-item.selected > div.nav-icon.similar-stores {
+   fill: var(--theme-primary-color-1);
+}
+
+nav div.nav-item > div.nav-icon.actions {
+    fill: #e4e4e4;
+}
+
+nav div.nav-item.selected > div.nav-icon.actions {
+    fill: var(--theme-primary-color-1);
+}
+
+nav div.nav-item > p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+    /* white-space: nowrap; */
+    height: 44px;
+}
+
+nav div.nav-item .shape {
+    fill: #e4e4e4;
+}
+
+nav div.nav-item.selected .shape {
+    fill: var(--theme-primary-color-1);
+}

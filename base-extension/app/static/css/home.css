@@ -1,0 +1,33 @@
+section#todays-deal,section#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    cursor: pointer;
+}
+
+#large-coupon {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#large-coupon svg, #large-coupon img {
+    cursor: pointer;
+    width: 164px;
+}
+
+.badge {
+    padding: 3px 10px;
+    background: var(--theme-primary-color-1);;
+    color: var(--theme-secondary-color-1);
+    border-radius: 10px;
+    position: absolute;
+    top: 45px;
+    left: 200px;
+}
+#home button{
+    cursor: pointer;
+}

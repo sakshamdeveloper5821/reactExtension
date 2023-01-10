@@ -1,0 +1,33 @@
+{
+  "short_name": "Planned Parenthood",
+  "name": "Planned Parenthood",
+  "description": "An extension that helps you support 'Planned Parenthood' through your shopping and the actions you take.",
+  "page_action": {   
+    "default_title": "Planned Parenthood"
+  },
+
+  "manifest_version": 2,
+  "version": "1.0.6",
+  "version_name": "1.0.6",
+  "author": "815312a6-8f2e-4a39-927e-9164e70f16c8",
+  // "content_security_policy": "script-src 'self' 'unsafe-eval' 'sha256-qVWnrg7wEp5UolWsZB//YoeKV0nptmt4LBWPXNBRA5w=' https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com; object-src 'self'",
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+  "content_scripts": [ {
+    "js": ["static/js/contentscript.js"],
+	  "matches": [ "*://*/*" ]
+   } ],
+
+  "background": {
+      "persistent": true,
+      "scripts": [ "static/js/jquery-3.2.1.min.js","static/js/storage.js","static/js/eventPage.js" ]
+   },
+  "permissions": [ "*://*/*","tabs","storage","webRequest"],
+  
+  "icons": {
+	    "128": "static/images/icon128.png",
+	    "48": "static/images/icon48.png",
+	    "16": "static/images/icon16.png"
+	  },
+  "web_accessible_resources":["index.html"]
+  
+}
